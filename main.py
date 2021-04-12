@@ -54,10 +54,12 @@ for i in range (1):
     
     Please also checkout my github https://github.com/dannybanno <3
     ''')
-    delay_print(Fore.YELLOW + "[1] - exit: ")
+    delay_print(Fore.YELLOW + '''[1] - exit 
+    [2] - Github
+    ''')
     exnd = input()
     if exnd == "1":
         print("bye!")
-        webbrowser.open_new(url)
         exit()
-
+    else:
+        webbrowser.open_new(url)
